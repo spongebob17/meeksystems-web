@@ -9,20 +9,31 @@ export const metadata: Metadata = {
   description:
     'Meek Systems is the parent company behind Merridian, Bruwis, and Kindr. We build AI operating systems for operators who need implementation, not advice.',
   keywords: 'AI systems, small business AI, Merridian, Bruwis, Kindr, Meek Systems, Jimik Ligon',
+  metadataBase: new URL('https://meeksystems.com'),
+  icons: {
+    icon: '/favicon.svg',
+  },
   openGraph: {
     title: 'Meek Systems | AI Operating Systems for Small Business',
-    description:
-      'One system. Every function. Built for people ready to move.',
+    description: 'One system. Every function. Built for people ready to move.',
     url: 'https://meeksystems.com',
     siteName: 'Meek Systems',
     type: 'website',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Meek Systems — One system. Every function.',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Meek Systems | AI Operating Systems for Small Business',
     description: 'One system. Every function. Built for people ready to move.',
+    images: ['/og-image.png'],
   },
-  metadataBase: new URL('https://meeksystems.com'),
 }
 
 export default function RootLayout({
