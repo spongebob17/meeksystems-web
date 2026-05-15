@@ -111,7 +111,6 @@ export default function ContactPage() {
               <div className="space-y-2 font-dm text-near-black text-sm">
                 <p>Meek Systems LLC</p>
                 <p className="text-slate-brand">Wyoming · USA</p>
-                <p className="text-slate-brand">EIN: 42-2050565</p>
               </div>
             </div>
 
