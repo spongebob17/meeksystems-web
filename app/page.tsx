@@ -123,7 +123,7 @@ export default function Home() {
       <section className="max-w-6xl mx-auto px-6 py-20">
         <div className="flex flex-col md:flex-row items-center gap-10">
           {/* Photo placeholder */}
-          <div className="relative flex-shrink-0"><div className="w-28 h-28 md:w-36 md:h-36 rounded-2xl overflow-hidden border-2 border-[#E8E4DF] relative"><Image src="/jimik-founder.jpg" alt="Jimik Ligon" fill className="object-cover object-top" priority /></div><div className="absolute -bottom-2 -right-2 w-5 h-5 bg-terracotta rounded-full border-2 border-warm-white" /></div>
+          <div className="relative flex-shrink-0"><div className="w-28 h-28 md:w-36 md:h-36 rounded-2xl overflow-hidden border-2 border-[#E8E4DF] relative"><Image src="/jimik-founder.jpg" alt="Jimik Ligon" fill className="object-cover object-[center_20%]" priority /></div><div className="absolute -bottom-2 -right-2 w-5 h-5 bg-terracotta rounded-full border-2 border-warm-white" /></div>
           <div>
             <p className="font-fraunces text-near-black text-xl md:text-2xl font-bold mb-2">
               Built by Jimik Ligon. Orlando, FL.
