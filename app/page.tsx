@@ -4,162 +4,207 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <div className="bg-warm-white">
+
       {/* Hero */}
-      <section className="max-w-6xl mx-auto px-6 pt-20 pb-24 md:pt-28 md:pb-32">
-        <div className="max-w-3xl">
-          <span className="inline-block font-dm text-xs font-bold tracking-widest text-terracotta uppercase mb-6">
-            Meek Systems
-          </span>
-          <h1 className="font-fraunces text-near-black text-4xl md:text-6xl font-bold leading-tight text-balance mb-6">
-            One system. Every function. Built for people ready to move.
-          </h1>
-          <p className="font-dm text-slate-brand text-lg md:text-xl leading-relaxed mb-10 max-w-xl">
-            Meek Systems is the parent company behind Merridian, Bruwis, and Kindr — three AI platforms built for operators who are done waiting for the right moment.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <a
-              href="https://merridian.ai"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-terracotta text-warm-white font-dm font-bold text-base px-7 py-3.5 rounded-lg hover:bg-[#b06340] transition-colors text-center"
-            >
-              Work with us
-            </a>
-            <Link
-              href="/builds"
-              className="inline-block border border-[#D4CFC9] text-near-black font-dm font-medium text-base px-7 py-3.5 rounded-lg hover:border-terracotta hover:text-terracotta transition-colors text-center"
-            >
-              See the builds
-            </Link>
-          </div>
+      <section className="max-w-5xl mx-auto px-6 pt-20 pb-24 md:pt-28 md:pb-32">
+        <span className="block font-dm text-[11px] font-bold tracking-widest text-slate-brand uppercase mb-8">
+          Orlando, FL
+        </span>
+        <h1 className="font-fraunces font-[200] text-near-black text-[46px] leading-tight mb-8">
+          People first.<br />
+          <span className="text-terracotta italic">Systems</span> that follow.
+        </h1>
+        <p className="font-dm text-[15px] text-slate-brand leading-relaxed mb-4 max-w-xl">
+          Three AI platforms built because real people have real problems and deserve real tools.
+        </p>
+        <p className="font-dm text-[15px] text-slate-brand leading-relaxed mb-10 max-w-xl">
+          Not built to flip. Not built to impress anyone. Built because it needed to exist and someone had to build it.
+        </p>
+        <div className="flex flex-wrap items-center gap-6">
+          <a
+            href="https://merridian.ai"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-near-black text-warm-white font-dm text-sm font-medium px-6 py-3 hover:bg-[#2a2a2a] transition-colors"
+          >
+            Work with us
+          </a>
+          <Link
+            href="/builds"
+            className="font-dm text-sm text-near-black underline underline-offset-4 hover:text-terracotta transition-colors"
+          >
+            See the builds
+          </Link>
         </div>
       </section>
 
-      {/* Ventures */}
-      <section className="bg-[#F3F0EC] py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="font-fraunces text-near-black text-2xl md:text-3xl font-bold mb-3">
-            Three platforms. One operating system behind them.
-          </h2>
-          <p className="font-dm text-slate-brand text-base mb-12 max-w-xl">
-            Each one built to solve a specific problem for a specific operator — no feature bloat, no generic tools.
-          </p>
+      {/* Builds section */}
+      <section className="max-w-5xl mx-auto px-6 pb-24">
+        <span className="block font-dm text-[11px] font-bold tracking-widest text-terracotta uppercase mb-5">
+          What we build
+        </span>
+        <h2 className="font-fraunces font-[300] text-near-black text-2xl md:text-3xl mb-12">
+          Three platforms. One operating system behind them.
+        </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Merridian */}
-            <a
-              href="https://merridian.ai"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group bg-warm-white rounded-2xl p-8 border border-[#E8E4DF] hover:border-terracotta hover:shadow-sm transition-all"
-            >
-              <div className="w-10 h-10 rounded-lg bg-terracotta mb-6 flex items-center justify-center">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                  <circle cx="12" cy="12" r="8" stroke="#FAF8F5" strokeWidth="2"/>
-                  <path d="M12 4v2M12 18v2M4 12H2M22 12h-2" stroke="#FAF8F5" strokeWidth="2" strokeLinecap="round"/>
-                  <path d="M12 12l5-5" stroke="#FAF8F5" strokeWidth="2" strokeLinecap="round"/>
-                </svg>
-              </div>
-              <div className="inline-block bg-[#F3F0EC] text-terracotta font-dm text-xs font-bold px-2.5 py-1 rounded-full mb-4 uppercase tracking-wide">
-                Live
-              </div>
-              <h3 className="font-fraunces text-near-black text-xl font-bold mb-3">Merridian</h3>
-              <p className="font-dm text-slate-brand text-sm leading-relaxed mb-6">
-                AI that works the way your business does. Custom AI systems for logistics, hospitality, and property management operators.
-              </p>
-              <span className="font-dm text-terracotta text-sm font-bold group-hover:underline">
-                merridian.ai →
-              </span>
-            </a>
+        <div className="border-t border-[rgba(26,26,26,0.10)]">
 
-            {/* Bruwis */}
-            <a
-              href="https://bruwis.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group bg-warm-white rounded-2xl p-8 border border-[#E8E4DF] hover:border-terracotta hover:shadow-sm transition-all"
-            >
-              <div className="w-10 h-10 rounded-lg bg-near-black mb-6 flex items-center justify-center">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                  <rect x="3" y="11" width="18" height="10" rx="2" stroke="#FAF8F5" strokeWidth="2"/>
-                  <path d="M7 11V7a5 5 0 0110 0v4" stroke="#FAF8F5" strokeWidth="2"/>
-                </svg>
-              </div>
-              <div className="inline-block bg-[#F3F0EC] text-terracotta font-dm text-xs font-bold px-2.5 py-1 rounded-full mb-4 uppercase tracking-wide">
-                Live
-              </div>
-              <h3 className="font-fraunces text-near-black text-xl font-bold mb-3">Bruwis</h3>
-              <p className="font-dm text-slate-brand text-sm leading-relaxed mb-6">
-                Your restaurant. Running smarter. AI-powered operations for independent restaurants — scheduling, compliance, HR, and more.
+          {/* Merridian */}
+          <div className="flex items-center gap-5 py-5 border-b border-[rgba(26,26,26,0.10)]">
+            <div className="flex-shrink-0 w-10 h-[36px] flex items-center justify-center">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="36" height="36" rx="4" fill="#1A1A1A"/>
+                <text x="18" y="25" textAnchor="middle" fontFamily="Georgia, serif" fontSize="18" fontWeight="700" fill="#FAF8F5">M</text>
+              </svg>
+            </div>
+            <div className="flex-1 min-w-0">
+              <p className="font-fraunces text-[19px] text-near-black leading-snug">Merridian</p>
+              <p className="font-dm text-[13px] text-slate-brand mt-0.5 leading-relaxed">
+                AI consulting and custom agent systems. For operators who need it built, not explained.
               </p>
-              <span className="font-dm text-terracotta text-sm font-bold group-hover:underline">
-                bruwis.com →
-              </span>
-            </a>
+            </div>
+            <span className="flex-shrink-0 font-dm text-[11px] font-bold text-green-600 bg-green-50 px-2.5 py-1 rounded-full uppercase tracking-wide">
+              Live
+            </span>
+          </div>
 
-            {/* Kindr */}
-            <div className="bg-warm-white rounded-2xl p-8 border border-[#E8E4DF] opacity-75">
-              <div className="w-10 h-10 rounded-lg bg-[#D4CFC9] mb-6 flex items-center justify-center">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                  <path d="M12 21C12 21 4 14 4 8a8 8 0 0116 0c0 6-8 13-8 13z" stroke="#6B7280" strokeWidth="2" strokeLinejoin="round"/>
-                </svg>
-              </div>
-              <div className="inline-block bg-[#F3F0EC] text-slate-brand font-dm text-xs font-bold px-2.5 py-1 rounded-full mb-4 uppercase tracking-wide">
-                In Development
-              </div>
-              <h3 className="font-fraunces text-near-black text-xl font-bold mb-3">Kindr</h3>
-              <p className="font-dm text-slate-brand text-sm leading-relaxed mb-6">
-                Be the difference. Track the proof. A platform for communities and organizations that measure what matters — kindness, impact, accountability.
+          {/* Bruwis */}
+          <div className="flex items-center gap-5 py-5 border-b border-[rgba(26,26,26,0.10)]">
+            <div className="flex-shrink-0 w-10 h-[36px] flex items-center justify-center">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="36" height="36" rx="4" fill="#C4714A"/>
+                <text x="18" y="25" textAnchor="middle" fontFamily="Georgia, serif" fontSize="18" fontWeight="700" fill="#FAF8F5">B</text>
+              </svg>
+            </div>
+            <div className="flex-1 min-w-0">
+              <p className="font-fraunces text-[19px] text-near-black leading-snug">Bruwis</p>
+              <p className="font-dm text-[13px] text-slate-brand mt-0.5 leading-relaxed">
+                Restaurant operations built by someone who has worked the line. Scheduling, HR, insights in one place.
               </p>
-              <span className="font-dm text-slate-brand text-sm font-medium">
-                Coming soon
-              </span>
+            </div>
+            <span className="flex-shrink-0 font-dm text-[11px] font-bold text-green-600 bg-green-50 px-2.5 py-1 rounded-full uppercase tracking-wide">
+              Live
+            </span>
+          </div>
+
+          {/* Ascend Scholar */}
+          <div className="flex items-center gap-5 py-5 border-b border-[rgba(26,26,26,0.10)]">
+            <div className="flex-shrink-0 w-10 h-[36px] flex items-center justify-center">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="36" height="36" rx="4" fill="#1A1A1A"/>
+                <text x="18" y="25" textAnchor="middle" fontFamily="Georgia, serif" fontSize="18" fontWeight="700" fill="#C4714A">A</text>
+              </svg>
+            </div>
+            <div className="flex-1 min-w-0">
+              <p className="font-fraunces text-[19px] text-near-black leading-snug">Ascend Scholar</p>
+              <p className="font-dm text-[13px] text-slate-brand mt-0.5 leading-relaxed">
+                AI scholarship navigator for first-generation students. The money exists. We help you find it.
+              </p>
+            </div>
+            <span className="flex-shrink-0 font-dm text-[11px] font-bold text-green-600 bg-green-50 px-2.5 py-1 rounded-full uppercase tracking-wide">
+              Live
+            </span>
+          </div>
+
+          {/* Kindr */}
+          <div className="flex items-center gap-5 py-5 border-b border-[rgba(26,26,26,0.10)]">
+            <div className="flex-shrink-0 w-10 h-[36px] flex items-center justify-center">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="36" height="36" rx="4" fill="#6B7280"/>
+                <text x="18" y="25" textAnchor="middle" fontFamily="Georgia, serif" fontSize="18" fontWeight="700" fill="#FAF8F5">K</text>
+              </svg>
+            </div>
+            <div className="flex-1 min-w-0">
+              <p className="font-fraunces text-[19px] text-near-black leading-snug">Kindr</p>
+              <p className="font-dm text-[13px] text-slate-brand mt-0.5 leading-relaxed">
+                Human connection platform. Coming after Ascend launches.
+              </p>
+            </div>
+            <span className="flex-shrink-0 font-dm text-[11px] font-bold text-slate-brand bg-[#F3F0EC] px-2.5 py-1 rounded-full uppercase tracking-wide">
+              Soon
+            </span>
+          </div>
+
+        </div>
+      </section>
+
+      {/* Founder section */}
+      <section className="max-w-5xl mx-auto px-6 pb-24">
+        <div className="grid grid-cols-[88px_1fr] gap-8 items-start">
+
+          <div className="flex-shrink-0">
+            <div className="w-[88px] h-[88px] rounded-lg overflow-hidden bg-[#E3DFD8] flex items-center justify-center relative">
+              <Image
+                src="/jimik-founder.jpg"
+                alt="Jimik Ligon"
+                fill
+                className="object-cover object-[center_20%]"
+                priority
+              />
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* Founder strip */}
-      <section className="max-w-6xl mx-auto px-6 py-20">
-        <div className="flex flex-col md:flex-row items-center gap-10">
-          {/* Photo placeholder */}
-          <div className="relative flex-shrink-0"><div className="w-28 h-28 md:w-36 md:h-36 rounded-2xl overflow-hidden border-2 border-[#E8E4DF] relative"><Image src="/jimik-founder.jpg" alt="Jimik Ligon" fill className="object-cover object-[center_20%]" priority /></div><div className="absolute -bottom-2 -right-2 w-5 h-5 bg-terracotta rounded-full border-2 border-warm-white" /></div>
           <div>
-            <p className="font-fraunces text-near-black text-xl md:text-2xl font-bold mb-2">
-              Built by Jimik Ligon. Orlando, FL.
+            <span className="block font-dm text-[11px] font-bold tracking-widest text-terracotta uppercase mb-3">
+              The founder
+            </span>
+            <p className="font-fraunces font-[300] text-near-black text-[26px] leading-snug mb-5">
+              Jimik Ligon
             </p>
-            <p className="font-dm text-slate-brand text-base leading-relaxed max-w-lg">
-              Ten years in luxury kitchens. One operating system built to make everything else run. Meek is not a weakness — it&apos;s the discipline to build something that lasts.
+
+            <p className="font-dm text-[15px] text-slate-brand leading-relaxed mb-4 max-w-xl">
+              Grew up in Philadelphia. Spent a decade in professional kitchens at some of the best properties in the country. Navigates ADHD every day and builds systems around it because he had no other option.
             </p>
+
+            <p className="font-dm text-[15px] text-slate-brand leading-relaxed mb-6 max-w-xl">
+              Came home after a shift one night, opened a laptop, and started building AI companies. Not for the money. For the people who needed it.
+            </p>
+
+            <blockquote className="border-t border-b border-[rgba(26,26,26,0.10)] py-5 my-6 max-w-xl">
+              <p className="font-fraunces font-[200] italic text-[17px] text-near-black leading-relaxed">
+                The only operation that lasts is one built on something real.
+              </p>
+            </blockquote>
+
+            <p className="font-dm text-[15px] text-slate-brand leading-relaxed mb-5 max-w-xl">
+              Building for family. Building for the people the industry keeps overlooking. Building because it matters more than the outcome.
+            </p>
+
             <Link
               href="/about"
-              className="inline-block mt-5 font-dm text-terracotta text-sm font-bold hover:underline"
+              className="font-dm text-sm text-near-black underline underline-offset-4 hover:text-terracotta transition-colors block mb-6"
             >
-              Read the story →
+              Read the full story
             </Link>
+
+            <p className="font-fraunces italic text-[12px] text-[rgba(26,26,26,0.45)]">
+              Ten years in the kitchen. Every system built after the shift ended.
+            </p>
           </div>
+
         </div>
       </section>
 
-      {/* CTA banner */}
-      <section className="bg-near-black py-16">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="font-fraunces text-warm-white text-2xl md:text-4xl font-bold mb-4">
-            Your business doesn&apos;t need more software.
-          </h2>
-          <p className="font-dm text-[#9B8069] text-base md:text-lg mb-8 max-w-xl mx-auto">
-            It needs AI that actually works the way you do. Merridian builds that for you.
+      {/* Closing CTA */}
+      <section className="bg-near-black py-20">
+        <div className="max-w-5xl mx-auto px-6">
+          <p className="font-fraunces font-[300] text-warm-white text-[21px] leading-snug mb-4 max-w-2xl">
+            Your business does not need more software. It needs AI that works the way you do.
+          </p>
+          <p className="font-dm text-[13px] text-slate-brand leading-relaxed mb-8 max-w-lg">
+            Merridian builds that for you. No pitch decks. No strategy you already know. Just the system, built and running.
           </p>
           <a
             href="https://merridian.ai"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-terracotta text-warm-white font-dm font-bold text-base px-8 py-4 rounded-lg hover:bg-[#b06340] transition-colors"
+            className="inline-block bg-warm-white text-near-black font-dm text-sm font-medium px-6 py-3 hover:bg-[#ede9e5] transition-colors"
           >
             Work with us at Merridian
           </a>
         </div>
       </section>
+
     </div>
   )
 }
