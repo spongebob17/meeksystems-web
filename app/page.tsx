@@ -84,10 +84,7 @@ export default function Home() {
           {/* Ascend Scholar */}
           <div className="flex items-center gap-5 py-5 border-b border-[rgba(26,26,26,0.10)]">
             <div className="flex-shrink-0 w-10 h-[36px] flex items-center justify-center">
-              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="36" height="36" rx="4" fill="#1A1A1A"/>
-                <text x="18" y="25" textAnchor="middle" fontFamily="Georgia, serif" fontSize="18" fontWeight="700" fill="#C4714A">A</text>
-              </svg>
+              <img src="/logos/ascend-scholar.png" alt="Ascend Scholar" style={{height: '36px', width: 'auto', objectFit: 'contain'}} />
             </div>
             <div className="flex-1 min-w-0">
               <p className="font-fraunces text-[19px] text-near-black leading-snug">Ascend Scholar</p>
